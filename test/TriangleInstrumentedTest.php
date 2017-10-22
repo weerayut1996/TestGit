@@ -13,7 +13,7 @@ class TriangleInstrumentedTest extends TestCase {
     public function testIsOutOfRange() {
         $t = new TriangleInstrumented(-300,500,-5);
         $this->assertEquals("a b c out of range",$t->getType()['answer']);
-        $path = array('A','B','C','D','E','F','G','H','P_Changed1');
+        $path = array('A','B','C','D','E','F','G','H','P');
         $this->assertEquals($path,$t->getType()['path']);
     }
 
